@@ -7,9 +7,9 @@
     <Version>2.0.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
-    <Authors>iZastic</Authors>
+    <Authors>panthernet</Authors>
     <PackageId>$(Authors).$(AssemblyName)</PackageId>
-    <PackageProjectUrl>https://github.com/iZastic/vrising-silkworm</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/panthernet/SilkwormReborn</PackageProjectUrl>
     <RootNamespace>Silkworm</RootNamespace>
   </PropertyGroup>
 

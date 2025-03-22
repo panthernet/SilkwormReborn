@@ -37,9 +37,4 @@ public class Plugin : BasePlugin
     }
 }
 
-public static class PluginInfo
-{
-    public const string PLUGIN_GUID = "VRising.SilkwormReborn";
-    public const string PLUGIN_NAME = "SilkwormReborn";
-    public const string PLUGIN_VERSION = "2.0.1";
-}
+

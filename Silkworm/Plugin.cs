@@ -27,7 +27,7 @@ public class Plugin : BasePlugin
 
     public override bool Unload()
     {
-        Logger.LogInfo("Silkworm Unloading");
+        Logger.LogInfo($"{PluginInfo.PLUGIN_NAME} Unloading");
         OptionsManager.FullSave();
         KeybindingsManager.FullSave();
 
@@ -35,4 +35,11 @@ public class Plugin : BasePlugin
 
         return false;
     }
+}
+
+public static class PluginInfo
+{
+    public const string PLUGIN_GUID = "VRising.SilkwormReborn";
+    public const string PLUGIN_NAME = "SilkwormReborn";
+    public const string PLUGIN_VERSION = "2.0.1";
 }

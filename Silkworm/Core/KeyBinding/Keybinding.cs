@@ -39,10 +39,10 @@ public class Keybinding
     internal string PrimaryName => InputAction.bindings[0].ToDisplayString();
     internal string SecondaryName => InputAction.bindings[1].ToDisplayString();
 
-    internal Keybinding(InputAction inputAction, string defaultPrimary = null, string defaultSecondary = null)
+    internal Keybinding(InputAction inputAction, string desc, string defaultPrimary = null, string defaultSecondary = null)
     {
         InputAction = inputAction;
-        NameKey = LocalizationManager.CreateKey(InputAction.name);
+        NameKey = LocalizationManager.CreateKey(desc);
 
         InputAction.AddBinding(defaultPrimary == null ? "" : defaultPrimary);
         DefaultPrimary = defaultPrimary == null ? "" : defaultPrimary;

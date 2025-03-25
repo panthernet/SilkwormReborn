@@ -21,12 +21,12 @@ public class KeybindingCategory
     {
         Name = name;
         InputActionMap = new InputActionMap(Name);
-        NameKey = LocalizationManager.CreateKey(Name);
+        NameKey = LocalizationManager.CreateKey(Name); 
     }
 
-    public Keybinding AddKeyBinding(string name, string defaultPrimary = null, string defaultSecondary = null)
+    public Keybinding AddKeyBinding(string name, string desc, string defaultPrimary = null, string defaultSecondary = null)
     {
-        var keybinding = new Keybinding(InputActionMap.AddAction(name), defaultPrimary, defaultSecondary);
+        var keybinding = new Keybinding(InputActionMap.AddAction(name), desc, defaultPrimary, defaultSecondary);
         if (Overrides.TryGetValue(name, out var data))
         {
             if (!string.IsNullOrEmpty(data.PrimaryOverride)) keybinding.Override(true, data.PrimaryOverride);
